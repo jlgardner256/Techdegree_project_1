@@ -22,10 +22,9 @@ def start_game():
         
         except ValueError as wrong_value:
             print("oops! you can only use a number for a guess.")
+            continue
        
-        #if choice_2 != (1, 10):
-           # raise ValueError(" you can only choose a number 1-10")
-       
+               
         if choice_2 > random:
             print( " Uh oh, the number your looking for is lower")
             guesses += 1
